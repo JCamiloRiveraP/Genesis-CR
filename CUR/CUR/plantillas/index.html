@@ -1,0 +1,485 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GENESIS - Tu vida, simplificada en una APP.</title>
+
+    <link rel="shortcut icon" href="{% static 'img/gn.png' %}" type="image/svg+xml">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img class="logo-img" src="{% static 'img/genesis-logo.png' %}" alt="Logo Genesis">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list container">
+
+                    <li>
+                        <a href="#home" class="navbar-link active" data-nav-link>Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#features" class="navbar-link" data-nav-link>Caracteristicas</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>Sobre Genesis</a>
+                    </li>
+
+                    <li>
+                        <a href="#app" class="navbar-link" data-nav-link>Desarrollo</a>
+                    </li>
+
+                    <li>
+                        <a href="/admin/" class="btn btn-primary">Login</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+            <!--- #HERO -->
+
+            <section class="section hero" aria-label="hero" id="home">
+                <div class="container">
+
+                    <div class="hero-content">
+
+                        <p class="section-subtitle">Tu vida simplificada, en una APP</p>
+
+                        <h1 class="h1 hero-title">Deje una buena impresion con GENESIS</h1>
+
+                        <p class="section-text">
+                            Mejora la gestion de tu universidad con nuestro sistema de gestion de relaciones con los estudiantes. Nuestra plataforma CRM ha sido disenada especificamente para satisfacer las necesidades unicas de las instituciones educativas y facilitar su crecimiento y exito.
+                        </p>
+
+                        <a href="#about" class="btn btn-primary">Descubre mas</a>
+
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="{% static 'img/m-1.png' %}" width="700" height="800" alt="hero banner"
+                            class="w-100 img-banner">
+                    </figure>
+
+                </div>
+            </section>
+
+
+            <!--- CARACTERISTICAS -->
+
+            <section class="section features" id="features" aria-label="features">
+                <div class="container">
+
+                    <p class="section-subtitle">Funciones de nuestra aplicacion</p>
+
+                    <h2 class="h2 section-title">Increibles Funciones</h2>
+
+                    <ul class="features-list">
+
+                        <li class="features-item">
+                            <div class="features-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="create-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Facil para editar</h3>
+
+                                <p class="card-text">
+                                    Contenido editable para todo el mundo
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li class="features-item">
+                            <div class="features-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Seguridad y privacidad</h3>
+
+                                <p class="card-text">
+                                    Mantenemos tus datos seguros y protegidos
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li class="features-item">
+                            <div class="features-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="settings-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Gestion integral</h3>
+
+                                <p class="card-text">
+                                    Organiza y almacena academica
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li class="features-item">
+                            <div class="features-card">
+
+                                <div class="card-icon">
+                                    <ion-icon name="cube-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="h3 card-title">Bases de datos</h3>
+
+                                <p class="card-text">
+                                    Manejo de bases de datos relacionables
+                                </p>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+            <!--- SOBRE -->
+
+            <section class="section about" id="about" aria-label="about">
+                <div class="container">
+
+                    <figure class="about-banner">
+                        <img src="{% static 'img/m-2.png' %}" width="1262" height="1357" loading="lazy"
+                            alt="about banner" class="w-100 img-banner">
+                    </figure>
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle">Nuestro objetivo</p>
+
+                        <h2 class="h2 section-title">Puedes confiar en nosotros</h2>
+
+                        <p class="section-text">
+                            No te quedes atras en la gestion universitaria. Unete a nuestra comunidad de instituciones educativas que confian en nuestro CRM <strong>GENESIS</strong> para optimizar sus procesos y lograr un crecimiento sostenible! Registrate hoy mismo y descubre como podemos ayudarte a alcanzar el exito.
+                        </p>
+
+                        <ul class="about-list">
+
+                            <li class="about-item">
+
+                                <div class="item-icon">
+                                    <ion-icon name="phone-portrait-sharp" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 item-title">Diseno adaptable o responsive</h3>
+                                </div>
+
+                            </li>
+
+                            <li class="about-item">
+
+                                <div class="item-icon">
+                                    <ion-icon name="pie-chart" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 item-title">Datos faciles de administrar</h3>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+        <!--- SOBRE 2 -->
+
+            <section class="section about-2" aria-label="about">
+                <div class="container">
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle">Diseno fresco y asombroso.</p>
+
+                        <h2 class="h2 section-title">Desarrollamos aplicaciones increibles para startups </h2>
+
+                        <p class="section-text">
+                            Con una combinacion perfecta de diseno innovador, comodidades excepcionales y una ubicacion privilegiada, nuestro desarrollo te brinda la oportunidad de disfrutar de una experiencia residencial inigualable.
+                        </p>
+
+                        <a href="https://camilorivera.co/" target="_blank" class="btn btn-secondary">Descubre mas</a>
+
+                    </div>
+
+                    <figure class="about-banner">
+                        <img src="{% static 'img/m-3.png' %}" width="1146" height="1226" loading="lazy"
+                            alt="about banner" class="w-100">
+                    </figure>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #APP
+      -->
+
+            <section class="section app" aria-label="app" id="app">
+                <div class="container">
+
+                    <figure class="app-banner">
+                        <img src="{% static 'img/m-1.png' %}" width="449" height="608" loading="lazy" alt="app banner"
+                            class="w-100">
+                    </figure>
+
+                    <div class="app-content">
+
+                        <p class="section-subtitle">Desarrollo y diseno</p>
+
+                        <h2 class="h2 section-title">Prototipo Genesis</h2>
+
+                        <p class="section-text">
+                            Desarrollado con las ultimas tecnologias utilizadas actualmente en el campo de desarrollo y diseno web.
+                        </p>
+
+                        <ul class="about-list">
+
+                            <li class="about-item">
+
+                                <div class="item-icon">
+                                    <ion-icon name="logo-python" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 item-title blanco-item">Django - Python</h3>
+                                </div>
+
+                            </li>
+
+                            <li class="about-item">
+
+                                <div class="item-icon">
+                                    <ion-icon name="logo-html5" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 item-title blanco-item">Html - Css - Bootstrap</h3>
+                                </div>
+
+                            </li>
+
+                            <li class="about-item">
+
+                                <div class="item-icon">
+                                    <ion-icon name="logo-javascript" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <div>
+                                    <h3 class="h3 item-title blanco-item">JavaScript</h3>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+        </article>
+    </main>
+
+    <!--- #FOOTER -->
+
+    <footer class="footer">
+
+        <div class="section footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img class="logo-img" src="{% static 'img/genesis-logo.png' %}" alt="Logo Genesis">
+                    </a>
+
+                    <p class="section-text">
+                        Disenada especificamente para satisfacer las necesidades unicas de las instituciones educativas y facilitar su crecimiento y exito.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/camilorivera.co" target="_blank" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/camilorivera.co/" target="_blank" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/JCamiloRiveraP" target="_blank" class="social-link">
+                                <ion-icon name="logo-github"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/camiloriveraco/" target="_blank" class="social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+                    
+
+                    <li>
+                        <p class="footer-list-title">Genesis</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Inicio</a>
+                    </li>
+
+                    <li>
+                        <a href="#features" class="footer-link">Caracteristicas</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="footer-link">Sobre Genesis</a>
+                    </li>
+
+                    <li>
+                        <a href="#app" class="footer-link">Desarrollo</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Otros Links</p>
+                    </li>
+
+                    <li>
+                        <a href="https://camilorivera.co/" target="_blank" class="footer-link">Desarrollador</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/JCamiloRiveraP" target="_blank" class="footer-link">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/camilorivera.co/" target="_blank" class="footer-link">Instagram</a>
+                    </li>
+
+                    
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contacto</p>
+                    </li>
+
+                    <li class="footer-item">
+                        <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                        <a href="https://wa.me/573192121761" class="item-link">+57 319 212 1761</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                        <a href="mailto:camilorivera@camilorivera.co" class="item-link">camilorivera@camilorivera.co</a>
+                    </li>
+
+                    <li class="footer-item">
+                        <ion-icon name="map-outline" aria-hidden="true"></ion-icon>
+
+                        <address class="item-link address">
+                           En alguna parte de la web<br>
+                           Bogota - Colombia
+                        </address>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2023 Todos los derechos reservados por <a href="http://camilorivera.co" target="_blank"
+                        class="copyright-link">CamiloRivera</a>.
+                </p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--- #BACK TO TOP -->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+
+    <script src="{% static 'js/script.js' %}" charset="utf-8"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
